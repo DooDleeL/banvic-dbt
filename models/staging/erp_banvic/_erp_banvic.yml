@@ -47,3 +47,24 @@ sources:
             combination_of_columns:
               - cod_colaborador
               - cod_agencia
+      - name: contas
+        description: Tabela que registra as informações das contas bancárias dos clientes, incluindo número da conta, agência, saldo, tipo de conta e data de abertura.
+        columns:
+          - name: num_conta
+            data_tests:
+              - unique 
+              - not_null
+      - name: propostas_credito
+        description: Tabela que armazena as propostas de crédito feitas aos clientes, incluindo dados como taxa de juros, valor da proposta, valor financiado, parcelas e status da proposta.
+        columns:
+          - name: cod_proposta
+            data_tests:
+              - unique 
+              - not_null
+      - name: transacoes
+        description: Tabela que registra as transações realizadas nas contas dos clientes, incluindo tipo da transação, valor e data da transação.
+        columns:
+          - name: cod_transacao
+            data_tests:
+              - unique 
+              - not_null
