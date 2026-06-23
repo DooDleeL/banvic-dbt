@@ -6,6 +6,36 @@ sources:
     tables:
       - name: localidades
         description: Table with city and state information.
+        columns:
+          - name: cod_localidade
+            description: PK for localidades
+            data_tests:
+              - unique
+              - not_null
 
       - name: clientes
         description: Table with customers information.
+        columns:
+          - name: cod_cliente
+            description: PK for customers
+            data_tests:
+              - unique
+              - not_null
+
+      - name: agencias
+        description: Table with agency details.
+        columns:
+          - name: cod_agencia
+            description: PK for agencies
+            data_tests:
+              - unique
+              - not_null
+
+      - name: colaboradores
+        description: Employees details.
+        columns:
+          - name: cod_colaborador
+            description: PK for employees
+            data_tests:
+              - unique
+              - not_null
