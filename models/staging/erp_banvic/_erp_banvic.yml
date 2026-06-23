@@ -1,0 +1,11 @@
+
+sources:
+  - name: erp_banvic
+    description: ERP system with customers, employees, bills and transctions from Banvic.
+    schema: erp_banvic
+    tables:
+      - name: localidades
+        description: Table with city and state information.
+
+      - name: clientes
+        description: Table with customers information.
